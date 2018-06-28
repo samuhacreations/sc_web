@@ -1,0 +1,11 @@
+#carousel {
+	width:960px;
+	height:300px;
+	position:relative;
+	clear:both;
+	overflow:hidden;
+}
+#carousel img {
+	visibility:hidden; /* hide images until carousel can handle them */
+	cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}

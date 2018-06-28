@@ -1,0 +1,13 @@
+SELECT 
+    pm.id,
+    pm.project_category_id,
+    pcf.field_name,
+    pd.field_value
+FROM
+    sc_db.projects_master pm
+        INNER JOIN
+    sc_db.project_details pd ON pm.id = project_id
+        INNER JOIN
+    sc_db.project_category_fields pcf ON pd.field_id = pcf.id
+
+

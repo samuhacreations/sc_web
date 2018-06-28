@@ -1,0 +1,41 @@
+Menus:
+Home
+Projects
+Investment
+Notifications
+Gallery
+About Us
+Careers
+Contact Us
+
+
+Disclaimer 
+Privacy Policy
+Code of Commitment
+Responsible 
+Disclosure Policy
+
+
+
+
+4th Floor, RC Reddy Complex, Uppal Ring Road, Beside Metro, Uppal, Hyderabad.
++91 9059169892 info@samuhacreations.com www.samuhacreations.com 
+
+Red color:
+#ed2a28
+
+Green color:
+#4caf50
+
+
+SELECT 
+*
+FROM
+    projects_master as p
+INNER JOIN
+	project_details as pd ON p.id = pd.project_id
+INNER JOIN 
+	project_category_fields as pcf ON pd.field_id = pcf.id
+
+
+
